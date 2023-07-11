@@ -47,16 +47,13 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 0 2rem; */
+   
 }
-/* 
-nav{
-    z-index: 1;
-} */
 
 a{
     text-decoration: none;
     color: white;
+    margin: 0 1rem;
 }
 
 ul{
@@ -126,23 +123,27 @@ nav li:hover{
 }
 
 .myPhoto img{
+    margin-top: 2rem;
+    height: 80vh;
     border-radius: 45%;
 }
 
 .hi_text{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: bold;
     color: var(--secondary-color);
 }
 
 .name{
-    font-size: 5rem;
+    font-size: 4rem;
+    width: 50%; 
+    margin: 0 auto; 
 }
+
 
 #hero h2{
     font-size: 4rem;
     font-weight: bold;
-
     overflow: hidden;
     border-right: 0.15em solid orange;
     white-space: nowrap;
@@ -292,7 +293,8 @@ footer{
  
 /* media Query */
 
-@media (max-weidth: 786px){
+
+@media (max-width: 786px){
     html{
         font-size: 40%;
     }
@@ -302,6 +304,7 @@ footer{
     }
 
     .hero_image{
+        
         display: grid;
         place-items: center;
     }
@@ -309,9 +312,14 @@ footer{
     #contact.container{
         height: 70vh;
     }
+
+    .myPhoto img{
+        border-radius: 45%;
+        height: 40rem;
+    }
 }
 
-@media (max-weidth: 500px){
+@media (max-width: 500px){
     html{
         font-size: 32%;
     }
@@ -324,8 +332,14 @@ footer{
         place-items: center;
     }
 
-    #contact.container{
+    #contact .container{
         height: 50vh;
     }
+    .myPhoto img{
+        border-radius: 45%;
+        height: 30rem;
+    }
 }
+
+
 
